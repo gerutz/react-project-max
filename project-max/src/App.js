@@ -7,15 +7,24 @@ class App extends Component {
   
   state = {
     person : [
-      {name: 'Catalina', Age:7},
-      {name: 'Soledad', Age:44},
-      {name: 'Catalina', Age:7},
+      {name: 'Catalina', age:7},
+      {name: 'Soledad', age:44},
+      {name: 'Catalina', age:7},
     ]
   }
 
   switchStatusHandler = () => {
-
-    console.log('Funciona el manejador de eventos');
+   
+    this.setState(
+      {
+        person : [
+          {name: 'Catalina Utz Nanni', age:7},
+          {name: 'Soledad', age:24},
+          {name: 'Catalina', age:7},
+        ]
+      }
+    );
+  
   }
   
   render() {
